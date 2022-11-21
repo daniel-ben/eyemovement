@@ -10,11 +10,11 @@ let leftPupil = document.querySelector('[data-left-pupil]');
 
 window.addEventListener('mousemove', function() {
 
-	let rightCoordinates = eyeMovement(1/14, rightEye);    //mouse position and pupil posistion
+	let rightCoordinates = eyeMovement(1/10, rightEye);    //mouse position and pupil posistion
 	let rpp = [rightCoordinates[2], -rightCoordinates[3]];          //pupil position (x, y)
 	let rmp = [rightCoordinates[0], rightCoordinates[1]];          //mouse position (cx, cy)
 
-	let leftCoordinates = eyeMovement(1/14, leftEye);    //mouse position and pupil posistion
+	let leftCoordinates = eyeMovement(1/10, leftEye);    //mouse position and pupil posistion
 	let lpp = [leftCoordinates[2], -leftCoordinates[3]];          //pupil position (x, y)
 	let lmp = [leftCoordinates[0], leftCoordinates[1]];          //mouse position (cx, cy)
 
